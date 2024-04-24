@@ -6,7 +6,7 @@ class Mergen < Formula
   version "1.0.0"
 
   def install
-    system "unzip", "mergen.zip"
+    system "unzip", "mergen-cli-1.0.0.zip"
     bin.install "mergen"
   end
 end
