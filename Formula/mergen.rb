@@ -1,4 +1,4 @@
-class MergenCli < Formula
+class Mergen < Formula
   desc "Mergen CLI tool"
   homepage "https://github.com/Yefimchukv/mergen-cli"
   url "https://github.com/Yefimchukv/mergen-cli/releases/download/v1.0.0/Mergen.pkg"
