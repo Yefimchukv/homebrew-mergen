@@ -6,6 +6,6 @@ class Mergen < Formula
   version "1.0.0"
 
   def install
-    system "installer", "-pkg", "Mergen.pkg", "-target", "/"
+    system "installer", "-pkg", "Mergen.pkg", "-target", "/mergen"
   end
 end
