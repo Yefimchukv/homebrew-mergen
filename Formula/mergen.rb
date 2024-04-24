@@ -6,6 +6,5 @@ class Mergen < Formula
 
   def install
     bin.install "Mergen.pkg" => "mergen"
-    system "chmod", "+x", "#{bin}/mergen"
   end
 end
