@@ -1,12 +1,10 @@
-class Mergen < Formula
-  desc "Custom Mergen for CLI usage"
+class MergenCli < Formula
+  desc "Mergen CLI tool"
   homepage "https://github.com/Yefimchukv/mergen-cli"
-  url "https://github.com/Yefimchukv/mergen-cli/archive/refs/tags/v1.0.0.zip"
-  sha256 "5493997bf6a38003a5573fec6b376bc2fe0292a451b14289c802507cbf009200"
-  version "1.0.0"
+  url "https://github.com/Yefimchukv/mergen-cli/releases/download/v1.0.0/Mergen.pkg"
+  sha256 "a4fea03b30f84c00a25c99d1a62d7aae0ecda23407d536dc693950ad0cde2799"
 
   def install
-    system "unzip", "10c46a0065460dcf7b77af057471eceb8f9686f726156191be70d78fe650985b--mergen-cli-1.0.0.zip"
-    bin.install "mergen"
+    bin.install "Mergen-signed.pkg" => "mergen"
   end
 end
