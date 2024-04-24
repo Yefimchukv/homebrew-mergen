@@ -5,6 +5,13 @@ class Mergen < Formula
   sha256 "a4fea03b30f84c00a25c99d1a62d7aae0ecda23407d536dc693950ad0cde2799"
 
   def install
-      system "installer", "-pkg", "Mergen.pkg", "-target", "/"
+    libexec.install "Mergen.pkg"
+  end
+
+  def caveats
+    <<~EOS
+      To finish the installation, run the following command with administrative privileges:
+      sudo installer -pkg #{libexec}/Mergen.pkg -target /
+    EOS
   end
 end
