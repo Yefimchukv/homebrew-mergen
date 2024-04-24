@@ -1,19 +1,10 @@
 class Mergen < Formula
   desc "Welcome to the Mergen CLI tool"
   homepage "https://github.com/Yefimchukv/mergen-cli"
-  url "https://github.com/Yefimchukv/mergen-cli/releases/download/v1.0.0/Mergen.pkg"
-  sha256 "a4fea03b30f84c00a25c99d1a62d7aae0ecda23407d536dc693950ad0cde2799"
+  url "https://github.com/Yefimchukv/mergen-cli/releases/download/v1.0.0/Mergen-signed"
+  sha256 "3c1d027cfa4feb090ddebddaf611cb8602bdce044fef30fe1e083aba2b80132c"
 
   def install
-    libexec.install "Mergen.pkg"
-  end
-
-  def caveats
-    <<~EOS
-      --------------------------------------------------------------------------------
-      * IMPORTANT: The installer has been downloaded to #{libexec}. To complete the installation, run:
-      * sudo installer -pkg #{libexec}/Mergen.pkg -target /
-      --------------------------------------------------------------------------------
-    EOS
+    bin.install "Mergen-signed" => "mergen"
   end
 end
