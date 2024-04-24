@@ -10,8 +10,10 @@ class Mergen < Formula
 
   def caveats
     <<~EOS
-      The installer has been downloaded to #{libexec}. To complete the installation, run:
-      sudo installer -pkg #{libexec}/Mergen.pkg -target /
+      --------------------------------------------------------------------------------
+      * IMPORTANT: The installer has been downloaded to #{libexec}. To complete the installation, run:
+      * sudo installer -pkg #{libexec}/Mergen.pkg -target /
+      --------------------------------------------------------------------------------
     EOS
   end
 end
