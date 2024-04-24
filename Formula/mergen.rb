@@ -5,6 +5,6 @@ class Mergen < Formula
   sha256 "a4fea03b30f84c00a25c99d1a62d7aae0ecda23407d536dc693950ad0cde2799"
 
   def install
-      system "sudo", "installer", "-pkg", "Mergen.pkg", "-target", "/"
+      system "installer", "-pkg", "Mergen.pkg", "-target", "/"
   end
 end
